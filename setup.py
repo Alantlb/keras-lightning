@@ -4,7 +4,7 @@ setuptools.setup(
     name='keras-lightning',
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    version="1.0.1",
+    version="1.0.2",
     author="Alan T. L. Bacellar",
     author_email="alanbacellar@gmail.com",
     description="Minimal Keras like wrapper for torch-lightning",
