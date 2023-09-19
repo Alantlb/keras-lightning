@@ -7,7 +7,9 @@ A lightweight, Keras-inspired wrapper for PyTorch Lightning.
 - **Flexible Trainer Arguments**: Pass Trainer arguments directly through the `fit` function using kwargs.
 
 ## Installation
-```pip install keras-lightning```
+```
+pip install keras-lightning
+```
 
 ## Quick Start: MNIST Example
 ```python
