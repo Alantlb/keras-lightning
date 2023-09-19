@@ -122,7 +122,7 @@ class KLModel(LightningModule):
 
         trainer = Trainer(
             accelerator = kwargs.pop('accelerator', 'auto'),
-            devices = 1, # kwargs.pop('devices', torch.cuda.device_count()) if torch.cuda.is_available() else 1,
+            devices = 1, # kwargs.pop('devices', torch.cuda.device_count()) if torch.cuda.is_available() else 1 --> Giving SegFault!
             max_epochs = epochs,
             callbacks = callbacks, 
             enable_checkpointing = kwargs.pop('enable_checkpointing', False),
