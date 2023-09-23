@@ -2,7 +2,7 @@
 A lightweight, Keras-inspired wrapper for PyTorch Lightning.
 
 ## Features
-- **No Logging by Default**: Keeps your console clean.
+- **No Checkpointing by Default**: Keeps your hd clean.
 - **GPU Integration**: Automatically utilizes GPU if available.
 - **Flexible Trainer Arguments**: Pass Trainer arguments directly through the `fit` function using kwargs.
 
