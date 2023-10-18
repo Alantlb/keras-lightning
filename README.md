@@ -29,8 +29,11 @@ model = KLModel(nn.Sequential(
 ))
 
 # Compiling the model
+
+optimizer = torch.optim.Adam(model.parameters(), 1e-3)
+
 model.compile(
-    optimizer=torch.optim.Adam(model.parameters(), 1e-3),
+    optimizer=optimizer,
     scheduler=torch.optim.lr_scheduler.StepLR(optimizer, gamma=0.1, step_size=10),
     loss=nn.functional.cross_entropy,
     metrics={'acc': SparseCategoricalAccuracy()}
